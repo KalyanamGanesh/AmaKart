@@ -72,10 +72,10 @@ for (var i = 0; i < productsFromLocalStorage.length; i++) {
 
 
 
-const searchInput = document.getElementById('search-input');
-const dataList = document.getElementById('data-list');
+var searchInput = document.getElementById('search-input');
+var dataList = document.getElementById('data-list');
 searchInput.addEventListener('input', function () {
-    const query = searchInput.value.trim().toLowerCase();
+    var query = searchInput.value.trim().toLowerCase();
     if (query) {
         dataList.style.display = 'block';
         filterDataList(query);
@@ -85,9 +85,9 @@ searchInput.addEventListener('input', function () {
 });
 
 function filterDataList(query) {
-    const items = dataList.querySelectorAll('li');
+    var items = dataList.querySelectorAll('li');
     items.forEach(item => {
-        const text = item.textContent.toLowerCase();
+        var text = item.textContent.toLowerCase();
         if (text.includes(query)) {
             item.style.display = 'block';
         } else {
