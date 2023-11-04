@@ -38,7 +38,7 @@ myFormSignUp.addEventListener('submit', function (e) {
         userInfoFromLocalStorage.push(NewUser);
         localStorage.setItem('userInfo',JSON.stringify(userInfoFromLocalStorage));
     }
-    location.assign("http://127.0.0.1:5500/AmaKartProducts.html");
+    location.assign("./AmaKartProducts.html");
 })
 
 myFormSignIn.addEventListener('submit', function (e) {
@@ -53,7 +53,7 @@ myFormSignIn.addEventListener('submit', function (e) {
         }
     }
     if(userLogged==true){
-        location.assign("http://127.0.0.1:5500/AmaKartProducts.html");
+        location.assign("./AmaKartProducts.html");
     }else{
         alert("Wrong Password/Email entered");
     }
