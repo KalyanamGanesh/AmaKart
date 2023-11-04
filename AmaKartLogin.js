@@ -34,13 +34,23 @@ myFormSignUp.addEventListener('submit', function (e) {
         var userInfo=[];
         userInfo.push(NewUser);
         localStorage.setItem('userInfo',JSON.stringify(userInfo));
+        location.assign("./AmaKartProducts.html");
     }else{
-        userInfoFromLocalStorage.push(NewUser);
-        localStorage.setItem('userInfo',JSON.stringify(userInfoFromLocalStorage));
+        var existingUser=false;
+        for(var i of userInfoFromLocalStorage){
+            if(i.email==userEmailC){
+                existingUser=true;
+            }
+        }
+        if(existingUser==true){
+            alert("entered mail id already registered , login  or create new user")
+        }else{
+            userInfoFromLocalStorage.push(NewUser);
+            localStorage.setItem('userInfo',JSON.stringify(userInfoFromLocalStorage));
+            location.assign("./AmaKartProducts.html");
+        }
     }
-    location.assign("./AmaKartProducts.html");
 })
-
 myFormSignIn.addEventListener('submit', function (e) {
     e.preventDefault();
     var userEmailS = document.getElementById('userEmailS').value;
