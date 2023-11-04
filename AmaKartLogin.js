@@ -21,10 +21,10 @@ var myFormSignIn = document.getElementById('myFormSignIn');
 var userInfoFromLocalStorage=JSON.parse(localStorage.getItem('userInfo'));
 myFormSignUp.addEventListener('submit', function (e) {
     e.preventDefault();
-    const userEmailC = document.getElementById('userEmailC').value;
+    var userEmailC = document.getElementById('userEmailC').value;
     userEmailC=userEmailC.toLowerCase();
-    const userPwdC = document.getElementById('userPwdC').value;
-    const userC=document.getElementById('userC').value;
+    var userPwdC = document.getElementById('userPwdC').value;
+    var userC=document.getElementById('userC').value;
     var NewUser={
         name:userC,
         email:userEmailC,
@@ -58,55 +58,4 @@ myFormSignIn.addEventListener('submit', function (e) {
         alert("Wrong Password/Email entered");
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var myFormSignUp = document.getElementById('myFormSignUp');
-// var myFormSignIn = document.getElementById('myFormSignIn');
-// myFormSignUp.addEventListener('submit', function (e) {
-//     e.preventDefault();
-//     const userEmailC = document.getElementById('userEmailC').value;
-//     const userPwdC = document.getElementById('userPwdC').value;
-//     localStorage.setItem("Email", userEmailC);
-//     localStorage.setItem("Password", userPwdC);
-//     location.assign("http://127.0.0.1:5500/mainPage.html");
-// })
-
-
-// myFormSignIn.addEventListener('submit', function (e) {
-//     e.preventDefault();
-//     const userEmailS = document.getElementById('userEmailS').value;
-//     const userPwdS = document.getElementById('userPwdS').value;
-//     if (userEmailS == localStorage.getItem('Email') && userPwdS == localStorage.getItem('Password')) {
-//         location.assign("http://127.0.0.1:5500/mainPage.html");
-//     } else {
-//         alert("Wrong Password/Email entered");
-//     }
-// })
 
