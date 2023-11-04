@@ -195,11 +195,11 @@ a {
     }
 
     .overlay-container {
-        top: 18%;
+        top: 20%;
         left: 5%;
         z-index:-1;
         width: 90%;
-        height: 18%;
+        height: 16%;
         border-radius: 5px;
         margin-top: 0px;
         padding: 5px 0px 5px;
