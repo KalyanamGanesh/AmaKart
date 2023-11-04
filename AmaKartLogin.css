@@ -197,7 +197,6 @@ a {
     .overlay-container {
         top: 20%;
         left: 5%;
-        z-index:-1;
         width: 90%;
         height: 16%;
         border-radius: 5px;
@@ -213,7 +212,6 @@ a {
         position: absolute;
         top: 34%;
         left: 5%;
-        z-index:1;
         width: 90%;
         height: 40%;
         padding-top: 0px;
