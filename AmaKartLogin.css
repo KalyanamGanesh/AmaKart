@@ -201,7 +201,7 @@ a {
         height: 18%;
         border-radius: 5px;
         margin-top: 0px;
-        padding: 5px 0px 10px;
+        padding: 5px 0px 5px;
     }
 
     .overlay-container h1 {
@@ -214,8 +214,8 @@ a {
         left: 5%;
         width: 90%;
         height: 55%;
-        padding-top: 10px;
-        margin-top: 15px;
+        padding-top: 0px;
+        margin-top: 5px;
         border-radius: 5px;
     }
 
