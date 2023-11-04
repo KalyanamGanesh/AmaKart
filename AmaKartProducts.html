@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmaKart Products</title>
+    <link rel="icon" type="image/x-icon" href="./FavIcon.png">
+    <link rel="stylesheet" href="./AmaKartProducts.css"/>
+    <script src="https://kit.fontawesome.com/62456e389d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="./AmaKartProducts.html" id="title"><span id="shop">AMA</span>KART</a></div>
+
+        <a onclick="addBtn()"><span id="resAdd">Add Products</span><i class="fa-solid fa-plus" id="icon-plus"></i></a>
+        <div class="search-wrapper">
+            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" placeholder="search for clothing,accessories and more..." id="search-input"/>
+            <i class="fa-solid fa-xmark" id="close"></i>
+
+        </div>
+        <a href="https://kalyanamganesh.github.io/MyPortfolio_Ganesh_K/" class="AbtRes">About</a>
+        <button id="logOut" class="logO" onclick="LogOut()">Logout</button>
+      
+        <div id="sideMenu">
+          <div class="res">
+            <i class="fa-solid fa-xmark close" onclick="closemenu()" style="color:white"></i><br>
+            <a href="https://kalyanamganesh.github.io/MyPortfolio_Ganesh_K/" style="color:white">About</a><br>
+            <button id="logOut" onclick="LogOut()">Logout</button>
+          </div>
+        </div>
+    
+        <i class="fa-solid fa-bars " id="menu" onclick="openmenu()"></i>
+        <div id="data-list">
+          <ul>
+            <li onclick="searchFun(0)" id="s0">clothing</li>
+            <li onclick="searchFun(1)" id="s1">smartphones</li>
+            <li onclick="searchFun(2)" id="s2">laptops</li>
+            <li onclick="searchFun(3)" id="s3">fragrances</li>
+            <li onclick="searchFun(4)" id="s4">skincare</li>
+            <li onclick="searchFun(5)" id="s5">home-decoration</li>
+            <li onclick="searchFun(6)" id="s6">accessory</li>
+        </ul>
+        </div>
+    </header>
+
+    <div id="addProductsNew">
+      <h1>Add Products</h1><span id="closeAdd"><i class="fa-solid fa-xmark"></i></span>
+      <h4>Welcome Back!</h4>
+      <p>Expand Your Inventory: Add New Products</p>
+        <div class="form-container">
+          <form id="addProducts">
+            <input type="text" placeholder="Enter the title of the product" id="pName" required />
+            <input type="text" placeholder="Enter the brand" id="pBrand" required />
+            <input type="number" placeholder="Enter the price" id="pPrice" required>
+            <input type="text" placeholder="Specify category i.e clothing,accessory,fragrances,smartphones,skincare,laptops and home-decoration" id="pCategory" required>
+            <input type="text" placeholder="Paste image source link here!" id="pImage" required/>
+            <button type="submit" id="add">Add</button>
+          </form>
+        </div>
+    </div>
+
+
+
+
+<!-- ----------------Header End  ------------Carousel start-------------------------- -->
+    <section class="carousel-section">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://shoplane-by-lassie.netlify.app/img/img1.png" class="d-block w-100" alt="...">
+        
+              </div>
+              <div class="carousel-item">
+                <img src="https://shoplane-by-lassie.netlify.app/img/img2.png" class="d-block w-100" alt="...">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="https://shoplane-by-lassie.netlify.app/img/img1.png" class="d-block w-100" alt="...">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="https://shoplane-by-lassie.netlify.app/img/img4.png" class="d-block w-100" alt="...">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="https://shoplane-by-lassie.netlify.app/img/img3.png" class="d-block w-100" alt="...">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="https://shoplane-by-lassie.netlify.app/img/img4.png" class="d-block w-100" alt="...">
+                
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+<!------------------ Carousel end ---------------->
+
+
+
+
+
+<h3 id="search-head"></h3>
+<div id="search-division">
+
+</div>
+
+
+
+
+
+
+
+<h3>Clothing</h3>
+    <div id="clothing">
+        
+
+    </div>  
+
+    <hr class="divider">
+
+<h3>Electronics and Accessories</h3>
+    <div id="electronics">
+        
+    
+    </div>
+
+    <hr class="divider">
+
+<h3>Fragrances and skincare</h3>
+
+    <div id="other-products">
+    
+    </div>
+
+    <div id="updateProduct">
+      <h1>Update Products</h1><span id="closeUp"><i class="fa-solid fa-xmark"></i></span>
+      <h4>Welcome Back!</h4>
+      <p>Expand Your Inventory: Update Your Products</p>
+        <div class="form-container">
+          <form id="updateProducts">
+            <input type="text" placeholder="Enter the title of the product" id="upName" />
+            <input type="text" placeholder="Enter the brand" id="upBrand" />
+            <input type="number" placeholder="Enter the price" id="upPrice" >
+            <input type="text" placeholder="Specify category i.e clothing,accessory,fragrances,smartphones,skincare,laptops and home-decoration" id="upCategory" >
+            <input type="text" placeholder="Paste image source link here!" id="upImage" />
+            <button type="submit" id="update">Update</button>
+          </form>
+        </div>
+    </div>
+
+
+    
+
+
+    <footer id="footer">
+        <p>Copyright @ GaneshKalyanam  ~  Email @ kganesh170650@gmail.com  ~  Mobile @ +91 7658962173</p>
+    </footer>
+
+    <script src="./AmaKartProducts.js"></script>
+</body>
+</html>
