@@ -38,7 +38,7 @@ addProducts.addEventListener('submit', function (e) {
 
 var logout = document.getElementById('logOut');
 function LogOut() {
-    window.location.assign('http://127.0.0.1:5500/index.html');
+    window.location.assign('./index.html');
 }
 
 
