@@ -51,6 +51,7 @@ myFormSignUp.addEventListener('submit', function (e) {
         }
     }
 })
+
 myFormSignIn.addEventListener('submit', function (e) {
     e.preventDefault();
     var userEmailS = document.getElementById('userEmailS').value;
