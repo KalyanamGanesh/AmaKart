@@ -100,11 +100,11 @@ header a{
     height:auto;
     text-align: center;
     border-radius: 5px;
-    margin:10px;
+    margin:2px;
     
 }
 .image{
-    height:40vh;
+    height:30vh;
     width:100%;
 }
 .card:hover{
@@ -286,7 +286,7 @@ span:hover{
        
     }
     .card{
-        width:40%;
+        width:46%;
     }
     #footer{
         padding:10px;
@@ -371,6 +371,9 @@ span:hover{
     .paraBtn{
         display: flex;
         flex-direction: column;
+    }
+    #electronics,#other-products,#clothing,#search-division{  
+        width:94%;
     }
 }
 
