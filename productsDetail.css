@@ -88,3 +88,23 @@
 .active {
     border: 2px solid #009688;
 }
+@media(max-width:480px){
+    #product{
+        max-width: 320px;
+        padding: 15px;
+        flex-direction: column;
+    }
+    
+    .left-column{
+        width:100%;
+    }
+    
+    #productImg{
+        margin-top: 20px;
+    }
+    
+    .right-column{
+        width: 100%;
+        padding-left:10px;
+    }
+}
