@@ -1,4 +1,4 @@
-
+var productDetail=JSON.parse(localStorage.getItem('productDetail'));
 document.body.innerHTML=`
 <div id="product">
         <div class="left-column">
@@ -25,7 +25,7 @@ document.body.innerHTML=`
             </div>
         </div>
     </div>`;
-var productDetail=JSON.parse(localStorage.getItem('productDetail'));
+
 var productImageElement = document.getElementsByClassName('previewImg')[0]
 for (let i = 0; i < productDetail.images.length; i++) {
   var smallImg = document.createElement('img');
