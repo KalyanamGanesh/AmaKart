@@ -57,16 +57,20 @@ myFormSignIn.addEventListener('submit', function (e) {
     var userEmailS = document.getElementById('userEmailS').value;
     userEmailS=userEmailS.toLowerCase();
     var userPwdS = document.getElementById('userPwdS').value;
-    var userLogged=false;
-    for(var i of userInfoFromLocalStorage){
-        if(userEmailS == i.email.toLowerCase() && userPwdS == i.password){
-            userLogged=true;
+    if(userInfoFromLocalStorage!=null){
+        var userLogged=false;
+        for(var i of userInfoFromLocalStorage){
+            if(userEmailS == i.email.toLowerCase() && userPwdS == i.password){
+                userLogged=true;
+            }
         }
-    }
-    if(userLogged==true){
-        location.assign("./AmaKartProducts.html");
+        if(userLogged==true){
+            location.assign("./AmaKartProducts.html");
+        }else{
+            alert("Wrong Password/Email entered");
+        }
     }else{
-        alert("Wrong Password/Email entered");
+        alert("Hello, Please Your Create Account !! ")
     }
 })
 
