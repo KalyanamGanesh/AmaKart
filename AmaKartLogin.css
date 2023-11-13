@@ -59,10 +59,10 @@ p {
 
 .overlay-container {
     position: absolute;
-    top: 0;
+    top: 1.5%;
     left: 55%;
     width: 30%;
-    height: 21%;
+    height: 25%;
     overflow: hidden;
     background: #4193ff;
     background: -webkit-linear-gradient(to right, #2bd5ff, #41c3ff);
@@ -72,7 +72,7 @@ p {
     background-position: 0 0;
     color: #FFFFFF;
     border-radius: 10px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     padding: 15px 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -85,10 +85,10 @@ p {
 
 .forms {
     position: absolute;
-    top: 21%;
+    top: 24%;
     left: 55%;
     width: 30%;
-    height: 70%;
+    height: 67vh;
     margin-top: 35px;
     border-radius: 10px;
     border-top-right-radius: 0px;
@@ -198,7 +198,7 @@ a {
         top: 16%;
         left: 5%;
         width: 90%;
-        height: 18%;
+        height: 16%;
         border-radius: 5px;
         margin-top: 0px;
         padding: 5px 0px 5px;
@@ -210,10 +210,10 @@ a {
 
     .forms {
         position: absolute;
-        top: 34%;
+        top: 32%;
         left: 5%;
         width: 90%;
-        height: 55%;
+        height: 50%;
         padding-top: 0px;
         margin-top: 5px;
         border-radius: 5px;
